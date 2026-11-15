@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=7d9c7283-adf9-470e-a734-634702662513
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Third Career Guidance Forum</title>
+<meta name="description" content="Third Career Guidance Forum· Tuseday, 24 November 2026 , Amman">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mohammad-hala.netlify.app/">
+<meta property="og:title" content="Third Career Guidance Forum">
+<meta property="og:description" content="Third Career Guidance Forum· Tuseday, 24 November 2026 , Amman">
+<meta property="og:image" content="https://mohammad-hala.netlify.app/og-cover.jpg?v=8">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f1e8dc">
+<link rel="icon" type="image/png" href="img/mono-en.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+SC:wght@500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: an unfolded invitation card. Narrow reading column, the couple's own calla lilies and photos from the Canva set framing each section; arched photo frames echo the invitation. Single deliberate "paper" theme. */
+:root{
+  --paper:#202348;
+  --card:#fa9805;
+  --ink:#ffffff;
+  --wine:#ffffff;
+  --wine-soft:#fa9805;
+  --rule:#202348;
+  --serif:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --caps:"Cormorant SC","Cormorant Garamond",Georgia,serif;
+  --arabic:"Amiri","Geeza Pro","Traditional Arabic",serif;
+  --arabic-display:"Amiri","Traditional Arabic",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:1.2rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[data-lang="ar"] body{font-family:var(--arabic);font-size:1.12rem;line-height:1.9}
+[lang="ar"]{font-family:var(--arabic)}
+html:not([data-lang="ar"]) [lang="ar"]:not(.always),html[data-lang="ar"] [lang="en"]:not(.always){display:none!important}
+a{color:var(--wine)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--wine);outline-offset:3px;border-radius:2px}
+img{display:block;max-width:100%;height:auto}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+.nav-in{max-width:64rem;margin:0 auto;padding:.55rem 16px;display:flex;align-items:center;gap:1rem}
+.nav-links{display:flex;gap:1.1rem;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{font-family:var(--caps);font-size:.95rem;letter-spacing:.08em;color:var(--ink);text-decoration:none;white-space:nowrap;padding:.2rem 0}
+html[data-lang="ar"] .nav-links a{font-family:var(--arabic);letter-spacing:0;font-size:1rem}
+.nav-links a:hover{color:var(--wine)}
+.lang{flex:none;border:1px solid var(--wine);background:transparent;color:var(--wine);font:inherit;font-size:1rem;padding:.15rem .8rem;border-radius:999px;cursor:pointer}
+.lang:hover{background:var(--wine);color:var(--card)}
+
+.wrap{max-width:42rem;margin:0 auto;padding-inline:16px;position:relative}
+.wide{max-width:64rem;margin:0 auto;padding-inline:16px;position:relative}
+
+/* hero */
+.hero{position:relative;text-align:center;padding-block:3rem 3.2rem;overflow:hidden}
+.hero .deco{position:absolute;pointer-events:none;z-index:0}
+.hero .d1{top:-10px;inset-inline-start:0;width:clamp(90px,16vw,200px)}
+.hero .d2{bottom:0;inset-inline-end:0;width:clamp(80px,14vw,180px)}
+html[data-lang="ar"] .hero .d1,html[data-lang="ar"] .hero .d2{transform:scaleX(-1)}
+.hero > .wrap{z-index:1}
+.verse{margin:0 auto 2.2rem;max-width:30rem}
+.verse img{width:min(100%,22rem);margin:0 auto}
+@media (max-width:600px){.verse img{width:min(56%,13rem)}.verse{margin-bottom:1.6rem}}
+.verse .en{font-style:italic;color:var(--wine-soft);font-size:1.02rem;display:block;margin-top:.8rem}
+.verse cite{display:block;font-family:var(--caps);font-style:normal;letter-spacing:.14em;font-size:.85rem;color:var(--wine-soft);margin-top:.5rem}
+html[data-lang="ar"] .verse cite{font-family:var(--arabic);letter-spacing:0;font-size:1rem}
+.mono{margin:0 auto 1.4rem;height:clamp(14rem,45vw,18rem);width:auto}
+.mono.ar{height:clamp(11.5rem,36vw,14.5rem)}
+.names{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--wine);font-size:clamp(2.6rem,9vw,4.2rem);line-height:1.05;margin:1.4rem 0 0;text-wrap:balance}
+html[data-lang="ar"] .names{font-style:normal;font-family:var(--arabic);font-weight:700}
+.families{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:.8rem;margin:0 auto;max-width:30rem}
+.families p{margin:0}
+.families .fam{font-style:italic;font-size:1.35rem;color:var(--wine);line-height:1.2}
+html[data-lang="ar"] .families .fam{font-style:normal}
+.families .mr{font-size:1rem;color:var(--wine-soft);margin-top:.3rem}
+.families .amp{font-style:italic;color:var(--wine);font-size:1.6rem;line-height:1}
+.request{font-style:italic;color:var(--wine-soft);margin:1.4rem auto 0;max-width:26rem;text-wrap:balance}
+html[data-lang="ar"] .request{font-style:normal}
+.when{margin-top:1.8rem;font-family:var(--caps);letter-spacing:.22em;color:var(--wine);font-size:1.05rem}
+html[data-lang="ar"] .when{font-family:var(--arabic);letter-spacing:0;font-size:1.25rem}
+.where{font-family:var(--caps);letter-spacing:.16em;font-size:.95rem;color:var(--ink);margin-top:.35rem}
+html[data-lang="ar"] .where{font-family:var(--arabic);letter-spacing:0;font-size:1.1rem}
+
+.count{display:flex;justify-content:center;gap:1.6rem;margin:2rem 0 0;padding:0;list-style:none;font-variant-numeric:tabular-nums}
+.count li{display:grid;justify-items:center}
+.count b{font-weight:500;font-size:2rem;color:var(--wine);line-height:1}
+.count span{font-family:var(--caps);font-size:.78rem;letter-spacing:.14em;color:var(--wine-soft)}
+html[data-lang="ar"] .count span{font-family:var(--arabic);letter-spacing:0;font-size:.95rem}
+
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--caps);letter-spacing:.1em;font-size:1rem;text-decoration:none;padding:.6rem 1.3rem;border-radius:999px;border:1px solid var(--wine);color:var(--wine);background:transparent;cursor:pointer}
+html[data-lang="ar"] .btn{font-family:var(--arabic);letter-spacing:0;font-size:1.05rem}
+.btn.solid{background:var(--wine);color:var(--card)}
+.btn:hover{background:var(--wine);color:var(--card)}
+.btn.solid:hover{background:#3f0606;border-color:#3f0606}
+.btn svg{width:1em;height:1em;flex:none}
+.rev{font-style:normal;font: size 0.2rem;color:var(--wine);line-height:1.2}
+
+/* sections */
+section{padding-block:3.2rem;border-top:1px solid var(--rule);position:relative}
+.eyebrow{font-family:var(--caps);letter-spacing:.2em;font-size:.85rem;color:var(--wine-soft);margin:0 0 .3rem}
+html[data-lang="ar"] .eyebrow{font-family:var(--arabic);letter-spacing:0;font-size:1rem}
+h2{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--wine);font-size:clamp(2rem,6vw,2.6rem);line-height:1.1;margin:0 0 1.2rem;text-wrap:balance}
+html[data-lang="ar"] h2{font-family:var(--arabic);font-style:normal;font-weight:700}
+h3{font-family:var(--caps);font-weight:500;letter-spacing:.1em;font-size:1.05rem;color:var(--wine);margin:0 0 .3rem}
+html[data-lang="ar"] h3{font-family:var(--arabic);letter-spacing:0;font-weight:700;font-size:1.15rem}
+p{margin:0 0 1rem}
+.sign{font-style:italic;color:var(--wine);font-weight:700}
+
+/* day: text column + tall calla */
+.day-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end}
+.day-grid .calla{width:clamp(70px,14vw,150px);margin-bottom:-3.2rem}
+@media (max-width:600px){.day-grid{grid-template-columns:1fr}.day-grid .calla{display:none}}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:6.5rem 1fr;gap:1rem;padding:.9rem 0;border-bottom:1px dashed var(--rule)}
+.timeline li:last-child{border-bottom:0}
+.timeline .t{font-variant-numeric:tabular-nums;color:var(--wine);font-weight:600}
+.note{font-size:1rem;color:var(--wine-soft);font-style:italic}
+html[data-lang="ar"] .note{font-style:normal}
+.venue{background:var(--card);border:1px solid var(--rule);padding:1.3rem 1.4rem;margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.venue div{min-width:0}
+.venue .vn{font-style:italic;font-size:1.6rem;color:var(--wine);line-height:1.2}
+html[data-lang="ar"] .venue .vn{font-style:normal;font-weight:700}
+.block{margin-top:2rem}
+
+/* story: Istanbul photo as a faded background */
+.story{overflow:hidden;padding-block:5rem;text-align:center;isolation:isolate}
+.story-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 75%;opacity:.42;z-index:-1}
+.story::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to bottom,var(--paper) 0%,transparent 12%,transparent 88%,var(--paper) 100%)}
+.story-text{max-width:36rem}
+.story-text p{font-style:italic;font-size:1.25rem}
+html[data-lang="ar"] .story-text p{font-style:normal}
+/* travel */
+.cities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:.6rem}
+@media (max-width:640px){.cities{grid-template-columns:1fr}}
+.city{background:var(--card);border:1px solid var(--rule);padding:1rem 1.1rem}
+.city .flag{letter-spacing:0;font-size:1.15em;vertical-align:-.05em}
+.city p{font-size:1.02rem;margin:.2rem 0 .6rem}participants
+.city .air{font-size:.98rem;color:var(--wine-soft);margin:0}
+.airport{display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;align-items:baseline;padding:.9rem 0;border-bottom:1px dashed var(--rule)}
+.airport:last-child{border-bottom:0}
+.code{font-family:var(--caps);letter-spacing:.1em;font-size:1.3rem;color:var(--wine)}
+.airport div{min-width:0}
+.airport p{font-size:1.02rem;margin:.2rem 0 0}
+
+/* hotels */
+.hotels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;margin-top:.6rem}
+@media (max-width:900px){.hotels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.hotels{grid-template-columns:1fr}}
+.hotel{background:var(--card);border:1px solid var(--rule);display:flex;flex-direction:column;overflow:hidden}
+.hotel img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:brightness(.82) saturate(.7) sepia(.18) contrast(.95)}
+.hotel .body{padding:.9rem 1.1rem 1.1rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
+.hotel .hn{font-family:var(--caps);letter-spacing:.06em;color:var(--ink);font-size:1.08rem;line-height:1.25}
+.hotel .meta{display:flex;gap:.8rem;flex-wrap:wrap;font-size:1rem;color:var(--wine-soft);align-items:center}
+.tier{border:1px solid var(--rule);border-radius:999px;padding:0 .6rem;font-size:.92rem}
+.hotel a{font-size:1rem;margin-top:auto}
+.arrive{margin-top:1.6rem;padding:1rem 1.2rem;border-inline-start:2px solid var(--wine);background:var(--card);font-weight:600;color:var(--wine)}
+
+/* explore: arched photos like the invitation */
+.places{list-style:none;margin:1rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem 1.2rem}
+.places a{display:block;text-decoration:none;color:var(--ink)}
+.places img{width:100%;aspect-ratio:9/10;object-fit:cover;filter:brightness(.82) saturate(.7) sepia(.18) contrast(.95);border-radius:999px 999px 4px 4px;border:1px solid var(--rule);transition:transform .3s ease}
+.places a:hover img{transform:translateY(-3px)}
+.places .cap{display:flex;gap:.5rem;align-items:baseline;margin-top:.55rem}
+.places .num{font-family:var(--caps);color:var(--wine-soft);font-size:1.3rem;font-variant-numeric:tabular-nums;line-height:1}
+.places .pn{font-size:1.1rem;line-height:1.2;font-weight:600;color:var(--wine)}
+.places .side{display:block;font-size:.88rem;color:var(--wine-soft)}
+@media (max-width:640px){.places{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem .55rem}.places .cap{display:block;margin-top:.4rem;line-height:1.2}.places .num{font-size:.85rem;display:block;margin-bottom:.1rem}.places .pn{font-size:.88rem}.places .side{font-size:.72rem}}
+
+/* rsvp */
+.rsvp{text-align:center;overflow:hidden}
+.rsvp .env{width:min(20rem,80%);margin:0 auto 1.4rem}
+.rsvp .deadline{font-size:1.35rem;color:var(--wine);font-style:italic}
+html[data-lang="ar"] .rsvp .deadline{font-style:normal;font-weight:700}
+.rsvp .curl{position:absolute;bottom:0;inset-inline-start:-10px;width:clamp(80px,13vw,150px);pointer-events:none}
+html[data-lang="ar"] .rsvp .curl{transform:scaleX(-1)}
+@media (max-width:600px){.rsvp .curl{opacity:.35}}
+
+footer{border-top:1px solid var(--rule);text-align:center;padding-block:3rem 4rem}
+footer .mono{height:8rem}
+footer .mono.ar{height:9rem}
+footer .names{font-size:2.2rem;margin-top:0}
+footer .when{margin-top:.6rem}
+.ext,.btn .ext{width:.7em;height:.7em;display:inline-block;vertical-align:.05em;flex:none}
+html[data-lang="ar"] .ext{transform:scaleX(-1)}
+
+/* Arabic refinements */
+html[data-lang="ar"] body{font-size:1.25rem;line-height:2}
+html[data-lang="ar"] .names,html[data-lang="ar"] h2,html[data-lang="ar"] .venue .vn,html[data-lang="ar"] .families .fam,html[data-lang="ar"] .rsvp .deadline{font-family:var(--arabic-display)}
+html[data-lang="ar"] .names{font-size:clamp(3rem,10vw,4.6rem);line-height:1.5}
+html[data-lang="ar"] h2{font-size:clamp(2.2rem,6.5vw,2.9rem);line-height:1.4}
+html[data-lang="ar"] .eyebrow{font-size:1.05rem;color:var(--wine-soft)}
+html[data-lang="ar"] .families .fam{font-size:1.7rem;font-weight:700}
+html[data-lang="ar"] .families .mr{font-size:1.05rem}
+html[data-lang="ar"] .families .amp{font-family:var(--arabic-display);font-style:normal;font-size:1.5rem;padding-top:.3rem}
+html[data-lang="ar"] .request{font-size:1.3rem;color:var(--wine)}
+html[data-lang="ar"] .honour{font-size:1.4rem;margin:0 0 .6rem;color:var(--wine);font-weight:600}
+html:not([data-lang="ar"]) .honour{display:none}
+html[data-lang="ar"] .note{font-size:1rem}
+html[data-lang="ar"] .story-text p{font-size:1.32rem;line-height:2.15}
+html[data-lang="ar"] .timeline{font-size:1.15rem}
+html[data-lang="ar"] .hotel .hn,html[data-lang="ar"] .city .air{text-align:right}
+html[data-lang="ar"] .places .pn{font-size:1.1rem}
+@media (max-width:640px){html[data-lang="ar"] .places .pn{font-size:.92rem}}
+html[data-lang="ar"] .verse cite{font-size:1.05rem}
+.closing{margin-top:1.6rem;font-weight:600;color:var(--wine)}
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sections">
+  <div class="nav-in">
+    <div class="nav-links">
+      <a href="#day"><span lang="en">The Day</span><span lang="ar">يوم الملتقى</span></a>
+      <a href="#story"><span lang="en">Our Idea</span><span lang="ar">فكرتنا</span></a>
+      <a href="#travel"><span lang="en">Participants</span><span lang="ar">المشاركون</span></a>
+      <!-- <a href="#hotel"><span lang="en">Where to Go</span><span lang="ar">المكان</span></a> -->
+      <a href="#stay"><span lang="en">Shepherds</span><span lang="ar">الرعاة</span></a>
+      <a href="#rsvp"><span lang="en">RSVP</span><span lang="ar">تأكيد الحضور</span></a>
+    </div>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language"><span lang="en">العربية</span><span lang="ar">English</span></button>
+  </div>
+</nav>
+
+<main>
+  <header class="hero">
+    <img class="deco d1" src="img/corner-1.png" alt="">
+    <img class="deco d2" src="img/corner-2.png" alt="">
+    <div class="wrap">
+      <figure class="verse" style="margin-inline:auto">
+        <img src="img/22.png" alt="ملتقى التوجيه المهني الثالث">
+        <!-- <span class="en" lang="en">Among His signs is that He created for you spouses from among yourselves, so that you may find tranquility in them, and He placed between you affection and mercy.</span> -->
+      <!---<cite><span lang="en">Surat Ar-Rum, verse 21</span><span lang="ar">سورة الروم، الآية ٢١</span></cite>--> 
+      </figure>
+
+      <!-- <img class="mono" lang="en" src="img/mono-en.png" alt="M H monogram">
+      <img class="mono ar" lang="ar" src="img/mono-ar.png" alt="شعار م ح"> -->
+
+      <p class="honour"><span lang="ar">تتشرّف</span></p>
+        
+          <p class="fam"><span lang="en">Directorate of Education / Marka District</span><span lang="ar">مديرية التربية و التعليم/لواء ماركا</span></p>
+         
+        
+      <p class="request"><span lang="en">request the honour of your presence</span><span lang="ar">بدعوتكم لحضور </span></p>
+
+      <h1 class="names"><span lang="en">Third Career Guidance Forum</span><span lang="ar">ملتقى التوجيه المهني الثالث</span></h1>
+
+      <p class="when"><span lang="en">Tuseday · 24 November 2026</span><span lang="ar">الثلاثاء 24 نوفمبر 2026</span></p>
+      <p class="where"><span lang="en">One o’clock in the evening</span><span lang="ar">في تمام الساعة الواحدة ظهرا</span></p>
+      <p class="where"><span lang="en">Amman , Jordan</span><span lang="ar"> مجلس قلقيلية, عمان ,الاردن</span></p>
+
+      <ul class="count" aria-label="Countdown">
+        <li><b id="cd-d">–</b><span><span lang="en">days</span><span lang="ar">يوم</span></span></li>
+        <li><b id="cd-h">–</b><span><span lang="en">hours</span><span lang="ar">ساعة</span></span></li>
+        <li><b id="cd-m">–</b><span><span lang="en">minutes</span><span lang="ar">دقيقة</span></span></li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener"><span lang="en">RSVP</span><span lang="ar">تأكيد الحضور</span></a>
+        <a class="btn" href="#calendar"><span lang="en">Add to calendar</span><span lang="ar">أضيفوا إلى التقويم</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="day">
+    <div class="wrap day-grid">
+      <div>
+        <p class="eyebrow"><span lang="en">Tuseday, 24 November 2026</span><span lang="ar">الثلاثاء 24 نوفمبر، 2026</span></p>
+        <h2><span lang="en">The Wedding Day</span><span lang="ar">تفاصيل يوم الملتقى</span></h2>
+        <ol class="timeline">
+          <li><span class="t"><span lang="en">7:00 PM</span><span lang="ar">1:00</span></span><span><span lang="en">Guest arrival</span><span lang="ar">الحضور</span></span></li>
+          <li><span class="t"><span lang="en">1:30 PM</span><span lang="ar">1:30</span></span><span><span lang="en">Ceremony begins</span><span lang="ar">بدء الحفل</span></span></li>
+          <li><span class="t"><span lang="en">Dress</span><span lang="ar">الزي</span></span><span><span lang="en">Formal attire</span><span lang="ar">إطلالة رسمية</span></span></li>
+        </ol>
+        <p class="note"><span lang="en">All times are Amman time .</span><span lang="ar">جميع الأوقات بتوقيت عمان.</span></p>
+
+        <div class="venue">
+          <div>
+            <h3><span lang="en">Venue</span><span lang="ar">المكان</span></h3>
+            <div class="vn"><span lang="en"> Qalqilya Council</span><span lang="ar">مجلس قلقيلية</span></div>
+            <div class="note"><span lang="en">Qalqilya Council, on AlHashmi Alshamali</span><span lang="ar">مجلس قلقيلية في الهاشمي الشمالي في عمان</span></div>
+          </div>
+          <a class="btn" href="https://maps.app.goo.gl/uzvRaKiqtU14NVCt5" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            <span lang="en">Open in Maps</span><span lang="ar">افتحوا الخريطة</span></a>
+        </div>
+
+        <p class="closing"><span lang="en">All that’s left is to see you there…</span><span lang="ar">كل ما تبقى هو أن نراكم هناك..</span></p>
+
+        <div class="block" id="calendar">
+          <h3><span lang="en">Save the date</span><span lang="ar">احفظوا الموعد</span></h3>
+          <div class="actions" style="justify-content:flex-start;margin-top:.6rem">
+            <a class="btn solid" id="gcal" target="_blank" rel="noopener" href="#"><span lang="en">Google Calendar</span><span lang="ar">تقويم Google</span></a>
+            <a class="btn solid" id="ocal" target="_blank" rel="noopener" href="#">Outlook</a>
+          </div>
+          <p class="note" style="margin-top:.8rem"><span lang="en">On iPhone, the Google Calendar link opens in your browser and adds the event to your Google account.</span><span lang="ar">على iPhone، يفتح رابط تقويم Google في المتصفح ويضيف الموعد إلى حساب Google.</span></p>
+        </div>
+      </div>
+      <img class="calla" src="img/calla-tall.png" alt="">
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <img class="story-bg" src="img/istanbul.jpg" alt="">
+    <div class="wrap story-text">
+      <!-- <p class="eyebrow"><span lang="en">Our Idea  </span><span lang="ar">فكرتنا</span></p> -->
+      <h2><span lang="en">Our Idea</span><span lang="ar">فكرتنا</span></h2>
+      <div lang="en">
+        <p>The third Career Guidance Forum stems from our belief in the importance of steering students toward a promising professional future,</p>
+        <p> helping them discover their interests and capabilities, and introducing them to the various professional and technical paths available to them.</p>
+       
+      </div>
+      <div lang="ar">
+       <p> ينطلق ملتقى التوجيه المهني الثالث من إيماننا بأهمية توجيه الطلبة نحو مستقبل مهني واعد، ومساعدتهم على اكتشاف ميولهم وقدراتهم، والتعرّف إلى الفرص والمسارات المهنية والتقنية المتاحة أمامهم.</p>
+<p>
+نسعى من خلال هذا الملتقى إلى ربط التعليم بواقع سوق العمل، وتسليط الضوء على مسار التعليم المهني والتقني BTEC، بوصفه فرصة لتنمية المهارات العملية والإبداعية، وتعزيز الابتكار وريادة الأعمال، وتمكين الطلبة من اتخاذ قرارات واعية ترسم ملامح مستقبلهم.
+</p>
+       
+      </div>
+    </div>
+  </section>
+
+   <section id="travel">
+   
+      <h2><span lang="en">Your Trip to Istanbul</span><span lang="ar">المشاركون في ملتقانا</span></h2>
+      <!-- <p><span lang="en">We have put together a list of everything you need to arrive, stay, and celebrate with us.</span><span lang="ar">جمعنا لكم كل ما تحتاجونه للوصول والإقامة ومشاركتنا الاحتفال.</span></p> -->
+
+      <div class="block">
+        <div class="cities">
+          <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+          </div>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style=" color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+            </div>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+            </div>
+                <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+          </div>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style=" color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+            </div>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            <p class="air"><span lang="en"></span><span lang="ar" ></span><a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener">قم بالتعرف عليها </a></span></p>
+            </div>
+        </div>
+      </div>
+
+      </section> 
+
+  <section id="stay">
+    <div class="wrap">
+        <h2><span lang="en">sponsers</span><span lang="ar">الرعاة في ملتقانا</span></h2>
+    <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <img src="img/22.png" width="150"  alt="ملتقى التوجيه المهني الثالث">
+          </div>
+          <p></p>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style=" color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            </div> <p></p>
+            <div class="city">
+            <h3><span lang="en">From Doha</span><span style="color: #202348;" lang="ar" > مدرسة النزهة المهنيةالثانوية للبنات</span> </h3>
+            <p><span lang="en"></span><span lang="ar"> مدرسة حكومية مهنية في عمّان (لواء ماركا، جبل النزهة، شارع عبد الله القرشي) تأسست عام 1986.</span></p>
+            </div> <p></p>
+    </div>
+  </section>
+
+  <section id="rsvp" class="rsvp">
+    <div class="wrap">
+      <img class="env" src="img/envelope.png" alt="">
+      <p class="eyebrow"><span lang="en">Kindly reply</span><span lang="ar">نرجو الرد</span></p>
+      <h2><span lang="en">RSVP</span><span lang="ar">تأكيد الحضور</span></h2>
+      <p class="deadline"><span lang="en">We would love for you to share our joy.</span><span lang="ar">يسعدنا أن تشاركونا فرحتنا.</span></p>
+      <div class="actions">
+        <a class="btn solid" href="https://forms.gle/nC2rAGBFe7EEaMFi6" target="_blank" rel="noopener"><span lang="en">Open the RSVP form</span><span lang="ar">افتحوا نموذج تأكيد الحضور</span> <svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    
+    <p class="eyebrow"><span lang="en">See you in Istanbul</span><span lang="ar">نلقاكم في ملتقاتا</span></p>
+    <p class="fam"><span lang="en">  </span><span lang="ar">مديرية التربية و التعليم / لواء ماركا</span></p>
+    <p class="when"><span lang="en">21 · 11 · 2026</span><span lang="ar">24.11.2026</span></p><p></p>
+        <p class="eyebrow"><span lang="en">21 · 11 · 2026</span><span lang="ar">  جميع الحقوق لدى قسم تكنولوجيا المعلومات في مدرسة النزهة المهنية  </span></p>
+
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    root.setAttribute('lang',l);
+    root.setAttribute('dir',l==='ar'?'rtl':'ltr');
+    try{localStorage.setItem('mh-lang',l)}catch(e){}
+    tick();
+  }
+  var arD=['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  function arNum(s){return String(s).replace(/\d/g,function(d){return arD[+d]})}
+  function maps(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q)}
+  function esc(s){return s}
+/*
+  var places=[
+    ['p-bluemosque','Blue Mosque','جامع السلطان أحمد','Sultan Ahmed Mosque Istanbul','Old City','المدينة القديمة'],
+    ['p-hagia','Hagia Sophia','آيا صوفيا','Hagia Sophia Istanbul','Old City','المدينة القديمة'],
+    ['p-topkapi','Topkapı Palace','قصر طوب قابي','Topkapi Palace Istanbul','Old City','المدينة القديمة'],
+    ['p-grandbazaar','Grand Bazaar','البازار الكبير','Grand Bazaar Istanbul','Old City','المدينة القديمة'],
+    ['p-spice','Spice Bazaar','بازار التوابل','Spice Bazaar Istanbul','Eminönü','أمين أونو'],
+    ['p-bosphorus','The Bosphorus','البوسفور','Bosphorus cruise Eminonu','By boat','بالقارب'],
+    ['p-galataport','Galataport','ميناء غالاتا بورت','Galataport Istanbul','Karaköy','كاراكوي'],
+    ['p-istiklal','İstiklal Avenue','شارع الاستقلال','Istiklal Avenue Istanbul','Beyoğlu','بيوغلو'],
+    ['p-ortakoy','Ortaköy','أورتاكوي','Ortakoy Mosque Istanbul','Bosphorus shore','ساحل البوسفور']
+  ];
+  var ul=document.getElementById('places');
+  places.forEach(function(p,i){
+    var n=String(i+1).padStart(2,'0');
+    var li=document.createElement('li');
+    li.innerHTML='<a href="'+maps(p[3])+'" target="_blank" rel="noopener">'+
+      '<img src="img/'+p[0]+'.jpg" alt="'+p[1]+'">'+
+      '<span class="cap"><span class="num"><span lang="en">'+n+'</span><span lang="ar">'+arNum(n)+'</span></span>'+
+      '<span><span class="pn"><span lang="en">'+p[1]+'</span><span lang="ar">'+p[2]+'</span></span>'+
+      '<span class="side"><span lang="en">'+p[4]+'</span><span lang="ar">'+p[5]+'</span></span></span></span></a>';
+    ul.appendChild(li);
+  });
+
+  var hotels=[
+    ['h-crowne','Crowne Plaza Istanbul Florya','5 min drive','٥ دقائق بالسيارة','Mid-range','متوسط التكلفة','Crowne Plaza Istanbul Florya'],
+    ['h-radisson','Radisson Blu Hotel, Istanbul Atakoy','10 min drive','١٠ دقائق بالسيارة','Mid-range','متوسط التكلفة','Radisson Blu Hotel Istanbul Atakoy'],
+    ['h-sheraton','Sheraton Istanbul Atakoy','10 min drive','١٠ دقائق بالسيارة','Higher cost','عالية التكلفة','Sheraton Istanbul Atakoy Hotel'],
+    ['h-jw','JW Marriott Istanbul Marmara Sea','15 min drive','١٥ دقيقة بالسيارة','Higher cost','عالية التكلفة','JW Marriott Istanbul Marmara Sea'],
+    ['h-hampton','Hampton by Hilton Istanbul Atakoy','15 min drive','١٥ دقيقة بالسيارة','Budget-friendly','اقتصادي','Hampton by Hilton Istanbul Atakoy'],
+    ['h-hiexpress','Holiday Inn Express Istanbul Atakoy Metro','15 min drive','١٥ دقيقة بالسيارة','Budget-friendly','اقتصادي','Holiday Inn Express Istanbul Atakoy Metro']
+  ];
+  var hw=document.getElementById('hotels');
+  hotels.forEach(function(h){
+    var d=document.createElement('div');d.className='hotel';
+    d.innerHTML='<img src="img/'+h[0]+'.jpg" alt="'+h[1]+'"><div class="body">'+
+      '<div class="hn"><bdi>'+h[1]+'</bdi></div>'+
+      '<div class="meta"><span><span lang="en">'+h[2]+'</span><span lang="ar">'+h[3]+'</span></span><span class="tier"><span lang="en">'+h[4]+'</span><span lang="ar">'+h[5]+'</span></span></div>'+
+      '<a href="'+maps(h[6])+'" target="_blank" rel="noopener"><span lang="en">View on map</span><span lang="ar">عرض على الخريطة</span> <svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>';
+    hw.appendChild(d);
+  });*/
+
+  var title="Mohammad & Hala's Wedding";
+  var details="Guest arrival 7:00 PM, ceremony 7:30 PM. Formal attire. RSVP: https://forms.gle/nC2rAGBFe7EEaMFi6";
+  var loc="Lina Florya, Istanbul, Türkiye";
+  document.getElementById('gcal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+
+    '&dates=20261121T160000Z/20261121T210000Z&details='+encodeURIComponent(details)+'&location='+encodeURIComponent(loc);
+  document.getElementById('ocal').href='https://outlook.live.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject='+encodeURIComponent(title)+
+    '&startdt='+encodeURIComponent('2026-11-21T16:00:00Z')+'&enddt='+encodeURIComponent('2026-11-21T21:00:00Z')+
+    '&body='+encodeURIComponent(details)+'&location='+encodeURIComponent(loc);
+
+  var target=Date.UTC(2026,10,24,16,0,0);
+  function tick(){
+    var ms=Math.max(0,target-Date.now());
+    var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;
+    var f=root.getAttribute('data-lang')==='ar'?arNum:String;
+    var e1=document.getElementById('cd-d');if(!e1)return;
+    e1.textContent=f(d);document.getElementById('cd-h').textContent=f(h);document.getElementById('cd-m').textContent=f(m);
+  }
+
+  var start='en';
+  if(location.hash==='#ar')start='ar';
+  else{try{var s=localStorage.getItem('mh-lang');if(s==='ar'||s==='en')start=s}catch(e){}}
+  setLang(start);
+  setInterval(tick,30000);
+  document.getElementById('langBtn').addEventListener('click',function(){setLang(root.getAttribute('data-lang')==='ar'?'en':'ar')});
+})();
+</script>
+
+</body>
+</html>
