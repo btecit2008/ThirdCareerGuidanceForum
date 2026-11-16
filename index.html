@@ -143,10 +143,13 @@ html[data-lang="ar"] .story-text p{font-style:normal}
 /* travel */
 .cities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:.6rem}
 @media (max-width:640px){.cities{grid-template-columns:1fr}}
-.city{background:var(--card);border-radius: 30px; border:1px solid var(--rule);padding:1rem 1.1rem}
+.city{background:var(--card);border-radius: 30px; border:1px solid var(--rule);padding:1rem 1.1rem ;text-align: center;}
 .city .flag{letter-spacing:0;font-size:1.15em;vertical-align:-.05em}
 .city p{font-size:1.02rem;margin:.2rem 0 .6rem}participants
 .city .air{font-size:.98rem;color:var(--wine-soft);margin:0}
+.city img{ display: block;
+  margin-left: auto;
+  margin-right: auto;}
 .airport{display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;align-items:baseline;padding:.9rem 0;border-bottom:1px dashed var(--rule)}
 .airport:last-child{border-bottom:0}
 .code{font-family:var(--caps);letter-spacing:.1em;font-size:1.3rem;color:var(--wine)}
